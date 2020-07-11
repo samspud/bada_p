@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/bada-project/static/css/main.523f09c5.chunk.css",
-    "main.js": "/bada-project/static/js/main.3789ca37.chunk.js",
-    "main.js.map": "/bada-project/static/js/main.3789ca37.chunk.js.map",
-    "runtime-main.js": "/bada-project/static/js/runtime-main.c8faae93.js",
-    "runtime-main.js.map": "/bada-project/static/js/runtime-main.c8faae93.js.map",
-    "static/js/2.c033013e.chunk.js": "/bada-project/static/js/2.c033013e.chunk.js",
-    "static/js/2.c033013e.chunk.js.map": "/bada-project/static/js/2.c033013e.chunk.js.map",
-    "index.html": "/bada-project/index.html",
-    "precache-manifest.f31b12903fdb0e0c4dbe38446ae9322c.js": "/bada-project/precache-manifest.f31b12903fdb0e0c4dbe38446ae9322c.js",
-    "service-worker.js": "/bada-project/service-worker.js",
-    "static/css/main.523f09c5.chunk.css.map": "/bada-project/static/css/main.523f09c5.chunk.css.map",
-    "static/js/2.c033013e.chunk.js.LICENSE.txt": "/bada-project/static/js/2.c033013e.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/bada-project/static/media/logo.ee7cd8ed.svg"
+    "main.css": "/bada_p/static/css/main.523f09c5.chunk.css",
+    "main.js": "/bada_p/static/js/main.59cf70b7.chunk.js",
+    "main.js.map": "/bada_p/static/js/main.59cf70b7.chunk.js.map",
+    "runtime-main.js": "/bada_p/static/js/runtime-main.3d911b1c.js",
+    "runtime-main.js.map": "/bada_p/static/js/runtime-main.3d911b1c.js.map",
+    "static/js/2.c033013e.chunk.js": "/bada_p/static/js/2.c033013e.chunk.js",
+    "static/js/2.c033013e.chunk.js.map": "/bada_p/static/js/2.c033013e.chunk.js.map",
+    "index.html": "/bada_p/index.html",
+    "precache-manifest.b3df8300580814540235957e229a5daf.js": "/bada_p/precache-manifest.b3df8300580814540235957e229a5daf.js",
+    "service-worker.js": "/bada_p/service-worker.js",
+    "static/css/main.523f09c5.chunk.css.map": "/bada_p/static/css/main.523f09c5.chunk.css.map",
+    "static/js/2.c033013e.chunk.js.LICENSE.txt": "/bada_p/static/js/2.c033013e.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/bada_p/static/media/logo.ee7cd8ed.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c8faae93.js",
+    "static/js/runtime-main.3d911b1c.js",
     "static/js/2.c033013e.chunk.js",
     "static/css/main.523f09c5.chunk.css",
-    "static/js/main.3789ca37.chunk.js"
+    "static/js/main.59cf70b7.chunk.js"
   ]
 }
