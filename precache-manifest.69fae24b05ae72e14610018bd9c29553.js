@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6862341b9289907b87308c0c85e2e24b",
+    "revision": "67804a760b87bdd4dec716b1cbe84768",
     "url": "/bada_p/index.html"
   },
   {
-    "revision": "123b11f4042ef71bbcf9",
-    "url": "/bada_p/static/css/main.4da33d05.chunk.css"
+    "revision": "593d94e6470990b466ff",
+    "url": "/bada_p/static/css/main.cf3173f3.chunk.css"
   },
   {
-    "revision": "90ee42218810e25abf24",
-    "url": "/bada_p/static/js/2.797f70ef.chunk.js"
+    "revision": "ad6b7b09da8100f753e3",
+    "url": "/bada_p/static/js/2.0055e26d.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/bada_p/static/js/2.797f70ef.chunk.js.LICENSE.txt"
+    "url": "/bada_p/static/js/2.0055e26d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "123b11f4042ef71bbcf9",
-    "url": "/bada_p/static/js/main.86f74fcf.chunk.js"
+    "revision": "593d94e6470990b466ff",
+    "url": "/bada_p/static/js/main.97da605f.chunk.js"
   },
   {
     "revision": "ebadc255a2237d8511e5",
@@ -28,19 +28,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bada_p/static/media/NanumBarunpenB.86bd0f8a.ttf"
   },
   {
-    "revision": "08c304a9993a72915442580f93ffdc79",
-    "url": "/bada_p/static/media/captain.08c304a9.jpg"
-  },
-  {
     "revision": "4f485ee53c6c44ba89f3d18f0a1ddc73",
     "url": "/bada_p/static/media/home.4f485ee5.png"
   },
   {
     "revision": "fc5d32f5f18f6b328fd345ea38f9bbf5",
     "url": "/bada_p/static/media/main.fc5d32f5.png"
-  },
-  {
-    "revision": "434522d934b95be627d5d55127100bf1",
-    "url": "/bada_p/static/media/nyang.434522d9.jpg"
   }
 ]);
