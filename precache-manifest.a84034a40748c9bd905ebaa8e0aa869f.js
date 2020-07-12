@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "13f90153932354be5003a6e290d15ff7",
+    "revision": "0498cc901902a9dfb47173b21187768d",
     "url": "/bada_p/index.html"
   },
   {
-    "revision": "1084786607863acbaa22",
-    "url": "/bada_p/static/css/main.fe25e84c.chunk.css"
+    "revision": "94bf0a684c8fad0ea26d",
+    "url": "/bada_p/static/css/main.2ced1b09.chunk.css"
   },
   {
     "revision": "46d16ec878768ee3c6e5",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bada_p/static/js/2.2deb3911.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1084786607863acbaa22",
-    "url": "/bada_p/static/js/main.9485f431.chunk.js"
+    "revision": "94bf0a684c8fad0ea26d",
+    "url": "/bada_p/static/js/main.9fdd7df2.chunk.js"
   },
   {
     "revision": "ebadc255a2237d8511e5",
@@ -28,11 +28,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bada_p/static/media/C_12.90ee5688.png"
   },
   {
-    "revision": "bcc3fb4d56f15e738899ee801bd94ed3",
-    "url": "/bada_p/static/media/Main.bcc3fb4d.png"
-  },
-  {
     "revision": "86bd0f8ad553a21319709f3cea42d9b7",
     "url": "/bada_p/static/media/NanumBarunpenB.86bd0f8a.ttf"
+  },
+  {
+    "revision": "4f485ee53c6c44ba89f3d18f0a1ddc73",
+    "url": "/bada_p/static/media/home.4f485ee5.png"
   }
 ]);
