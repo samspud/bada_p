@@ -12,10 +12,9 @@ function Home()
             <div className={styles.Main}>
                 <img className={styles.imgBG} src={imgBG}/>
 
-                
                 <Link style={{ textDecoration: 'none', color: 'white'}} to='./main'>
                     <button className={styles.StartButton}>
-                        테스트 시작!
+                        <b>테스트 시작하기!</b>
                     </button>
                 </Link>
             </div>

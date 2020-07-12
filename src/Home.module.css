@@ -5,35 +5,95 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-
-    max-width: 100vw;
 }
 
 
 .Main {
-    height:100vh;
-    width:auto;
+    align-items: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    width: 100vw;
 }
 
 .imgBG {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+
+    height: auto;
+    width: 100vw;
 }
 
 .StartButton {
-    position: relative;
+    position: absolute;
+    transform: translate(-50%, 50%);
 
     color: white;
     background: #2e425c;
-    padding: 24.3px 59.4px;
+    
+    padding: 2.2vw 5.5vw;
 
     font-family: 'NanumBarunpen Bold';
-    line-height: 1.7;
+    line-height: 5.58vw;
 
-    border: 6.3px solid #95c8e6;
-    border-radius: 47.7px;
-    box-shadow: 0 0 11.7px 0 #008cff;
+    border: 3px solid #95c8e6;
+    border-radius: 4.41vw;
+    box-shadow: 0 0 1.08vw 0 #008cff;
     outline: 0;
 
-    font-size: 2rem;
+    margin-top: 114vw;
+
+    font-size: 4vw;
+}
+
+@media ( min-width:768px ) {
+    .Home {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .Main {
+        align-items: center;
+        text-align: center;
+    
+        display: flex;
+        flex-direction: column;
+        
+        height: 100vh;
+        width: 768px;
+    }
+    
+    .imgBG {
+        position: absolute;
+    
+        height: auto;
+        width: 768px;
+    }
+    
+    .StartButton {
+        position: absolute;
+        transform: translate(-50%, 50%);
+    
+        color: white;
+        background: #2e425c;
+        
+        padding: 17.28px 42.24px;
+    
+        font-family: 'NanumBarunpen Bold';
+        line-height: 42.88px;
+    
+        border: 3px solid #95c8e6;
+        border-radius: 33.92px;
+        box-shadow: 0 0 8.32px 0 #008cff;
+        outline: 0;
+    
+        margin-top: 874px;
+    
+        font-size: 30.72px;
+    }
 }
