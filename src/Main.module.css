@@ -1,0 +1,10 @@
+@font-face { font-family: 'NanumBarunpen Bold'; src: url(./fonts/NanumBarunpenB.ttf) format('truetype'); }
+
+.Main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin: 0 auto;
+}

@@ -11,3 +11,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face { font-family: 'NanumBarunpen Bold'; src: url(./fonts/NanumBarunpenB.ttf) format('truetype'); }

@@ -1,0 +1,39 @@
+@font-face { font-family: 'NanumBarunpen Bold'; src: url(./fonts/NanumBarunpenB.ttf) format('truetype'); }
+
+.Home {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100vw;
+}
+
+
+.Main {
+    height:100vh;
+    width:auto;
+}
+
+.imgBG {
+    width: 100%;
+    height: 100%;
+}
+
+.StartButton {
+    position: relative;
+
+    color: white;
+    background: #2e425c;
+    padding: 24.3px 59.4px;
+
+    font-family: 'NanumBarunpen Bold';
+    line-height: 1.7;
+
+    border: 6.3px solid #95c8e6;
+    border-radius: 47.7px;
+    box-shadow: 0 0 11.7px 0 #008cff;
+    outline: 0;
+
+    font-size: 2rem;
+}
