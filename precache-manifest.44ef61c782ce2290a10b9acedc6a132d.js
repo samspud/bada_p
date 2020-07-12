@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f972cf84a6d8e833da0202d76b013f2",
+    "revision": "dfb9d1658294a37798d3fec852f48ec1",
     "url": "/bada_p/index.html"
   },
   {
-    "revision": "82c34ddcd70fe85f3f15",
-    "url": "/bada_p/static/css/main.c325f6fd.chunk.css"
+    "revision": "94fb9ee280e6ba43f7ce",
+    "url": "/bada_p/static/css/main.8d1ca7ee.chunk.css"
   },
   {
     "revision": "bc5ab07e69c5b7819dcb",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bada_p/static/js/2.90866916.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82c34ddcd70fe85f3f15",
-    "url": "/bada_p/static/js/main.b74d6906.chunk.js"
+    "revision": "94fb9ee280e6ba43f7ce",
+    "url": "/bada_p/static/js/main.623fe149.chunk.js"
   },
   {
     "revision": "ebadc255a2237d8511e5",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "86bd0f8ad553a21319709f3cea42d9b7",
     "url": "/bada_p/static/media/NanumBarunpenB.86bd0f8a.ttf"
+  },
+  {
+    "revision": "08c304a9993a72915442580f93ffdc79",
+    "url": "/bada_p/static/media/captain.08c304a9.jpg"
   },
   {
     "revision": "4f485ee53c6c44ba89f3d18f0a1ddc73",
