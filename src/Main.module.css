@@ -11,12 +11,13 @@
 
 .MainContext {
     align-items: center;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
     
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .imgBG {
@@ -48,23 +49,21 @@
     margin-top: 11vw;
 
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    font-size: 5.58vw;
+    font-size: 4.58vw;
 }
 
 .Title {
-    padding: 4.58vw 4.41vw ;
+    padding: 4.58vw 4.41vw;
 
     font-family: 'NanumBarunpen Bold';
 }
 
 .ImageBox {
     position: absolute;
-    
-    border: 2px solid red;
 
     width: 61.2vw;
     height: 61.2vw;
@@ -72,25 +71,28 @@
     margin-top: 42vw;
 }
 
+.ImageChar {
+    width: 100%;
+    height: 100%;
+}
+
 .Question_1 {
     position: absolute;
 
     width: 87.25vw;
     height: 14.4vw;
-    
+
     margin-top: 111.9vw;
 
     display: flex;
     text-align: left;
     align-items: center;
-    justify-content: left;
 
-    background-color: white;
-    opacity: 80%;
+    background-color: #dde6f0;
     border-radius: 3.3vw;
     outline: 0;
 
-    box-shadow: 0 0 1.41vw 0 #000000;
+    box-shadow: 0 0 1.41vw 0 #85000000;
 }
 
 .Question_2 {
@@ -104,16 +106,12 @@
     display: flex;
     text-align: left;
     align-items: center;
-    justify-content: left;
 
-    font-size: 5.58vw;
-
-    background-color: white;
-    opacity: 80%;
+    background-color: #dde6f0;
     border-radius: 3.3vw;
     outline: 0;
 
-    box-shadow: 0 0 1.41vw 0 #000000;
+    box-shadow: 0 0 1.41vw 0 #85000000;
 }
 
 .Question_3 {
@@ -127,16 +125,12 @@
     display: flex;
     text-align: left;
     align-items: center;
-    justify-content: left;
 
-    font-size: 5.58vw;
-
-    background-color: white;
-    opacity: 80%;
+    background-color: #dde6f0;
     border-radius: 3.3vw;
     outline: 0;
 
-    box-shadow: 0 0 1.41vw 0 #000000;
+    box-shadow: 0 0 1.41vw 0 #85000000;
 }
 
 .Circle_1 {
@@ -210,7 +204,7 @@
     margin-left: 5.33vw;
 }
 
-@media ( min-width:768px ) {
+@media all and ( min-width:768px ) {
     .Main {
     
         align-items: center;
@@ -226,7 +220,7 @@
         display: flex;
         flex-direction: column;
         
-        height: 100%;
+        height: 100vh;
         width: 768px;
     }
     
@@ -263,7 +257,7 @@
         align-items: center;
         justify-content: center;
     
-        font-size: 42.8544px;
+        font-size: 35.17px;
     }
     
     .Title {
@@ -274,8 +268,6 @@
     
     .ImageBox {
         position: absolute;
-        
-        border: 2px solid red;
     
         width: 470px;
         height: 470px;
@@ -298,12 +290,12 @@
     
         font-size: 42.85px;
     
-        background-color: white;
-        opacity: 80%;
+        background-color: #dde6f0;
         border-radius: 25.34px;
         outline: 0;
+        opacity: 80%;
     
-        box-shadow: 0 0 10.83px 0 #000000;
+        box-shadow: 0 0 10.83px 0 #85000000;
     }
     
     .Question_2 {
@@ -321,12 +313,11 @@
     
         font-size: 42.85px;
     
-        background-color: white;
-        opacity: 80%;
+        background-color: #dde6f0;
         border-radius: 25.34px;
         outline: 0;
     
-        box-shadow: 0 0 10.83px 0 #000000;
+        box-shadow: 0 0 10.83px 0 #85000000;
     }
     
     .Question_3 {
@@ -344,12 +335,11 @@
     
         font-size: 42.85px;
     
-        background-color: white;
-        opacity: 80%;
+        background-color: #dde6f0;
         border-radius: 25.34px;
         outline: 0;
     
-        box-shadow: 0 0 10.83px 0 #000000;
+        box-shadow: 0 0 10.83px 0 #85000000;
     }
 
     .Circle_1 {
@@ -416,6 +406,8 @@
     }
     
     .QuestionText {
+        position: absolute;
+        
         font-family: 'NanumBarunpen Bold';
         font-size: 27.96px;
     

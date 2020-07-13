@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
-import styled from 'styled-components';
 import imgBG from './images/home/home.png';
 
 function Home()
@@ -10,7 +9,7 @@ function Home()
         <>
         <div className={styles.Home}>
             <div className={styles.Main}>
-                <img className={styles.imgBG} src={imgBG}/>
+                <img className={styles.imgBG} src={imgBG} alt='homeBG'/>
 
                 <Link style={{ textDecoration: 'none', color: 'white'}} to='./main'>
                     <button className={styles.StartButton}>
