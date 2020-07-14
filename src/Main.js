@@ -5,10 +5,10 @@ import C_1 from './images/main/1.png'
 import C_2 from './images/main/2.png'
 import C_3 from './images/main/3.png'
 import C_4 from './images/main/4.png'
-import C_5 from './images/main/5-2.png'
+import C_5 from './images/main/5.png'
 import C_6 from './images/main/6.png'
 import C_7 from './images/main/7.png'
-import C_8 from './images/main/8-2.png'
+import C_8 from './images/main/8.png'
 import C_9 from './images/main/9.png'
 
 function GetImgCharacter(number) {
@@ -78,6 +78,65 @@ function GetImgCharacter(number) {
     }
 }
 
+function CreateQuestion(number, onClick_point, onNext) {
+    if ( questions[number - 1].qn === 3 )
+    {
+        return (
+            <>
+            <button className={styles.Question_1} onClick={() => onClick_point(1)}>
+                <div className={styles.QuestionText}>
+                    {questions[number - 1].q1}
+                </div>
+            </button>
+            <div className={styles.Circle_1}>
+                1
+            </div>
+                
+            <button className={styles.Question_2} onClick={() => onClick_point(2)}>
+                <div className={styles.QuestionText}>
+                    {questions[number - 1].q2}
+                </div>
+            </button>
+            <div className={styles.Circle_2}>
+                2
+            </div>
+            <button className={styles.Question_3} onClick={onNext}>
+                <div className={styles.QuestionText}>
+                    {questions[number - 1].q3}
+                </div>
+            </button>
+            <div className={styles.Circle_3}>
+                3
+            </div>
+            </>
+        );
+    }
+    else
+    {
+        return (
+            <>
+            <button className={styles.Question_1} onClick={() => onClick_point(1)}>
+                <div className={styles.QuestionText}> 
+                    {questions[number - 1].q1}
+                </div>
+            </button>
+            <div className={styles.Circle_1}>
+                1
+            </div>
+                
+            <button className={styles.Question_2} onClick={() => onClick_point(2)}>
+                <div className={styles.QuestionText}>
+                    {questions[number - 1].q2}
+                </div>
+            </button>
+            <div className={styles.Circle_2}>
+                2
+            </div>
+            </>
+        );
+    }
+}
+
 let value_0 = 0;
 let value_1 = 0;
 let value_2 = 0;
@@ -87,8 +146,9 @@ function Main( {history} )
 {
     const [number, setNumber] = useState(1);
 
-    const onClick_1 = () => {
+    const onClick_point = (props) => {
         let isThreeQ = false;
+        const point = 3 - props;    // 몇 번째 선택지 고르느냐 분간하기 위한 수치
 
         if ( questions[number - 1].qn === 3 )
         {
@@ -99,17 +159,17 @@ function Main( {history} )
         {
             case 0:
                 {
-                    isThreeQ ? value_0 += 2 : value_0 += 1;
+                    isThreeQ ? value_0 += point : value_0 += (point - 1);
                     break;
                 }
             case 1:
                 {
-                    isThreeQ ? value_1 += 2 : value_1 += 1;
+                    isThreeQ ? value_1 += point : value_1 += (point - 1);
                     break;
                 }
             case 2:
                 {
-                    isThreeQ ? value_2 += 2 : value_2 += 1;
+                    isThreeQ ? value_2 += point : value_2 += (point - 1);
                     break;
                 }
             case 3:
@@ -121,57 +181,10 @@ function Main( {history} )
                 break;
         }
 
-        if ( number >= 9)
-        {
-            value_0 = value_0 >= 2 ? 0 : 1;
-            value_1 = value_1 >= 3 ? 0 : 1;
-            value_2 = value_2 >= 1 ? 0 : 1;
-            value_3 = value_3 >= 2 ? 0 : 1;
-
-            let value = value_0 * 1000 + value_1 * 100 + value_2 * 10 + value_3;
-
-            console.log(value);
-
-            let address = '/result/' + value;
-            history.push(address);
-        }
-        else
-            onNext();
-    }
-
-    const onClick_2 = () => {
-        let isThreeQ = false;
-
-        if ( questions[number - 1].qn === 3 )
-        {
-            isThreeQ = true;
-        }
-
-        switch (questions[number - 1].type)
-        {
-            case 0:
-                {
-                    isThreeQ ? value_0 += 1 : value_0 += 0;
-                    break;
-                }
-            case 1:
-                {
-                    isThreeQ ? value_1 += 1 : value_1 += 0;
-                    break;
-                }
-            case 2:
-                {
-                    isThreeQ ? value_2 += 1 : value_2 += 0;
-                    break;
-                }
-            case 3:
-                {
-                    isThreeQ ? value_3 += 1 : value_3 += 0;
-                    break;
-                }
-            default:
-                break;
-        }
+        console.log(value_0);
+        console.log(value_1);
+        console.log(value_2);
+        console.log(value_3);
 
         if ( number >= 9)
         {
@@ -190,11 +203,7 @@ function Main( {history} )
         else
             onNext();
     }
-
-    const onClick_3 = () => {
-        onNext();
-    }
-
+   
     const onNext = () => {
         if ( number <= 9 )
         {
@@ -232,67 +241,8 @@ function Main( {history} )
                     </div>
 
                     {/* 선지 */}
-                    {CreateQuestion(number, onClick_1, onClick_2, onClick_3)}
+                    {CreateQuestion(number, onClick_point, onNext)}
                 </div>
-            </div>
-            </>
-        );
-    }
-}
-
-function CreateQuestion(number, onClick_1, onClick_2, onClick_3) {
-    if ( questions[number - 1].qn === 3 )
-    {
-        return (
-            <>
-            <button className={styles.Question_1} onClick={onClick_1}>
-                <div className={styles.QuestionText}>
-                    {questions[number - 1].q1}
-                </div>
-            </button>
-            <div className={styles.Circle_1}>
-                1
-            </div>
-                
-            <button className={styles.Question_2} onClick={onClick_2}>
-                <div className={styles.QuestionText}>
-                    {questions[number - 1].q2}
-                </div>
-            </button>
-            <div className={styles.Circle_2}>
-                2
-            </div>
-            <button className={styles.Question_3} onClick={onClick_3}>
-                <div className={styles.QuestionText}>
-                    {questions[number - 1].q3}
-                </div>
-            </button>
-            <div className={styles.Circle_3}>
-                3
-            </div>
-            </>
-        );
-    }
-    else
-    {
-        return (
-            <>
-            <button className={styles.Question_1} onClick={onClick_1}>
-                <div className={styles.QuestionText}> 
-                    {questions[number - 1].q1}
-                </div>
-            </button>
-            <div className={styles.Circle_1}>
-                1
-            </div>
-                
-            <button className={styles.Question_2} onClick={onClick_2}>
-                <div className={styles.QuestionText}>
-                    {questions[number - 1].q2}
-                </div>
-            </button>
-            <div className={styles.Circle_2}>
-                2
             </div>
             </>
         );

@@ -65,9 +65,9 @@
 .ImageBox {
     position: absolute;
 
-    width: 61.2vw;
-    height: 61.2vw;
-    
+    width: 62vw;
+    height: 62vw;
+
     margin-top: 42vw;
 }
 
@@ -91,6 +91,7 @@
     background-color: #dde6f0;
     border-radius: 3.3vw;
     outline: 0;
+    opacity: 0.8;
 
     box-shadow: 0 0 1.41vw 0 #85000000;
 }
@@ -110,6 +111,7 @@
     background-color: #dde6f0;
     border-radius: 3.3vw;
     outline: 0;
+    opacity: 0.8;
 
     box-shadow: 0 0 1.41vw 0 #85000000;
 }
@@ -129,6 +131,7 @@
     background-color: #dde6f0;
     border-radius: 3.3vw;
     outline: 0;
+    opacity: 0.8;
 
     box-shadow: 0 0 1.41vw 0 #85000000;
 }
@@ -269,9 +272,9 @@
     .ImageBox {
         position: absolute;
     
-        width: 470px;
-        height: 470px;
-        
+        width: 480px;
+        height: 480px;
+
         margin-top: 322.56px;
     }
     
@@ -293,7 +296,6 @@
         background-color: #dde6f0;
         border-radius: 25.34px;
         outline: 0;
-        opacity: 80%;
     
         box-shadow: 0 0 10.83px 0 #85000000;
     }
