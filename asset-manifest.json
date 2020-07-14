@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bada_p/static/css/main.9d234e04.chunk.css",
-    "main.js": "/bada_p/static/js/main.d0799819.chunk.js",
-    "main.js.map": "/bada_p/static/js/main.d0799819.chunk.js.map",
+    "main.js": "/bada_p/static/js/main.d3806034.chunk.js",
+    "main.js.map": "/bada_p/static/js/main.d3806034.chunk.js.map",
     "runtime-main.js": "/bada_p/static/js/runtime-main.28172f32.js",
     "runtime-main.js.map": "/bada_p/static/js/runtime-main.28172f32.js.map",
     "static/js/2.123f55ea.chunk.js": "/bada_p/static/js/2.123f55ea.chunk.js",
     "static/js/2.123f55ea.chunk.js.map": "/bada_p/static/js/2.123f55ea.chunk.js.map",
     "index.html": "/bada_p/index.html",
-    "precache-manifest.b2cec00201deb57f2f277fa389e4c100.js": "/bada_p/precache-manifest.b2cec00201deb57f2f277fa389e4c100.js",
+    "precache-manifest.487d15be4e93ae1ec47b9de10256d6df.js": "/bada_p/precache-manifest.487d15be4e93ae1ec47b9de10256d6df.js",
     "service-worker.js": "/bada_p/service-worker.js",
     "static/css/main.9d234e04.chunk.css.map": "/bada_p/static/css/main.9d234e04.chunk.css.map",
     "static/js/2.123f55ea.chunk.js.LICENSE.txt": "/bada_p/static/js/2.123f55ea.chunk.js.LICENSE.txt",
@@ -46,6 +46,6 @@
     "static/js/runtime-main.28172f32.js",
     "static/js/2.123f55ea.chunk.js",
     "static/css/main.9d234e04.chunk.css",
-    "static/js/main.d0799819.chunk.js"
+    "static/js/main.d3806034.chunk.js"
   ]
 }
