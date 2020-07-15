@@ -89,7 +89,7 @@ function CreateQuestion(number, onClick_point, onNext) {
                         {SplittText(questions[number - 1].q1)}
                     </div>
                 </button>
-                <div className={styles.Circle_1}>
+                <div className={styles.Circle}>
                     1
                 </div>
             </div>
@@ -99,7 +99,7 @@ function CreateQuestion(number, onClick_point, onNext) {
                         {SplittText(questions[number - 1].q2)}
                     </div>
                 </button>
-                <div className={styles.Circle_2}>
+                <div className={styles.Circle}>
                     2
                 </div>
                 
@@ -110,7 +110,7 @@ function CreateQuestion(number, onClick_point, onNext) {
                         {SplittText(questions[number - 1].q3)}
                     </div>
                 </button>
-                <div className={styles.Circle_3}>
+                <div className={styles.Circle}>
                     3
                 </div>
                 
@@ -128,7 +128,7 @@ function CreateQuestion(number, onClick_point, onNext) {
                         {SplittText(questions[number - 1].q1)}
                     </div>
                 </button>
-                <div className={styles.Circle_1}>
+                <div className={styles.Circle}>
                     1
                 </div>
             </div>
@@ -138,7 +138,7 @@ function CreateQuestion(number, onClick_point, onNext) {
                         {SplittText(questions[number - 1].q2)}
                     </div>
                 </button>
-                <div className={styles.Circle_2}>
+                <div className={styles.Circle}>
                     2
                 </div>
                 
@@ -191,12 +191,6 @@ function Main( {history} )
             default:
                 break;
         }
-
-        console.log(value_0);
-        console.log(value_1);
-        console.log(value_2);
-        console.log(value_3);
-
         if ( number >= 9)
         {
             value_0 = value_0 >= 2 ? 0 : 1;
@@ -205,8 +199,6 @@ function Main( {history} )
             value_3 = value_3 >= 2 ? 0 : 1;
 
             let value = value_0 * 1000 + value_1 * 100 + value_2 * 10 + value_3;
-
-            console.log(value);
 
             let address = '/result/' + value;
             history.push(address);

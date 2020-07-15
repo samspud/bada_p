@@ -1,6 +1,4 @@
 import React from 'react';
-import 'react-app-polyfill/ie11';
-import 'react-app-polyfill/stable';
 import styles from './Home.module.css';
 import imgBG from './images/home/home.png';
 

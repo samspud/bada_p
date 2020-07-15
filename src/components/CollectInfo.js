@@ -3,6 +3,7 @@ import styled, {ThemeProvider} from 'styled-components';
 import Button from './Button';
 import TitleImg from '../images/collect/title.png';
 import BottomImg from '../images/collect/info.png';
+import PriceImg from '../images/collect/price.png'
 
 const DarkBackground = styled.div`
   overflow: scroll;
@@ -19,7 +20,7 @@ const DarkBackground = styled.div`
 
 const InfoBlock = styled.div`
   width: 100vw;
-  height: 260vw;
+  height: 300vw;
 
   display: flex;
   flex-direction: column;
@@ -30,6 +31,8 @@ const InfoBlock = styled.div`
     margin-top: 6.6vw;
     margin-bottom: 0;
     margin-left: 9.17vw;
+
+    display: inline-block;
 
     font-size: 4vw;
     text-align: left;
@@ -45,13 +48,16 @@ const InfoBlock = styled.div`
   @media all and ( min-width:530px )
   {
     width: 530px;
-    height: 1366px;
+    height: 1500px;
 
     h2 {
         margin-top: 16.28px;
         margin-left: 48.6px;
 
         font-size: 21.2px;
+    }
+    span {
+        color: #517db5;
     }
     p {
         margin-left: 48.6px;
@@ -63,12 +69,12 @@ const ImageCover = styled.div`
   display: flex;
   text-align:center;
   justify-content:center;
-  `;
+`;
 const TitleImage = styled.img`
     width: 75.3vw;
     height: 25.64vw;
 
-    margin-left: -3vw;
+    margin-left: 3vw;
     padding: 0.01vw 0;
 
     @media all and ( min-width:530px )
@@ -76,8 +82,18 @@ const TitleImage = styled.img`
         width: 399.09px;
         height: 135.89px;
 
-        margin-left: -15.9px;
+        margin-left: 15.9px;
         padding: 0.53px 0;
+    }
+`;
+const PriceImage = styled.img`
+    width: 100vw;
+    height: 43.69vw;
+
+    @media all and ( min-width:530px )
+    {
+        width: 530px;
+        height: 231.56px;
     }
 `;
 const BottomImage = styled.img`
@@ -302,9 +318,12 @@ function CollectInfo({
             <ImageCover>
             <TitleImage src={TitleImg}/>
             </ImageCover>
+            <ImageCover>
+            <PriceImage src={PriceImg}/>
+            </ImageCover>
 
             <h2>
-                이름 (실명) *
+                이름 (실명) <span color='#517db5'>*</span>
             </h2>
             <p>
                 본인 실명을 입력해주세요
@@ -315,7 +334,7 @@ function CollectInfo({
             <InputUnderline/>
 
             <h2>
-                휴대폰 번호 *
+                휴대폰 번호 <span color='#517db5'>*</span>
             </h2>
             <p>
                 하이폰을 삽입하여 입력해주세요. (예) 010-1234-5678
