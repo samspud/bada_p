@@ -12,8 +12,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <BrowserRouter>
-  {/* </BrowserRouter><BrowserRouter basename={process.env.PUBLIC_URL}> */}
+  // <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>,
   document.getElementById('root'),
