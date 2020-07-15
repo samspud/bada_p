@@ -149,9 +149,6 @@ function Result( {match})
                     const mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
                     const userAgent = navigator.userAgent.toLowerCase();
 
-                    console.log(mobile);
-                    console.log(userAgent);
-
                     if (mobile) {
                         if ( userAgent.indexOf('android') > -1) {
                             //안드로이드
@@ -190,11 +187,6 @@ function Result( {match})
                             mobileWebUrl: 'http://fonfonsea1388.me',
                             androidExecParams: 'test',
                           },
-                        },
-                        social: {
-                          likeCount: 10,
-                          commentCount: 20,
-                          sharedCount: 30,
                         },
                         buttons: [
                           {

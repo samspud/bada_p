@@ -25,6 +25,8 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>1388 Find Friend</title>
+
+    <!--페북 API인데 쓸모 있나..?-->
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -43,9 +45,31 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
+
+    <!--카카오 API-->
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
       Kakao.init('94a93ce8b33b626fe9bd60d85d0efb42');
+    </script>
+
+    <!--네이버 애널리틱스-->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "7518e89274bba8";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172708151-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172708151-1');
     </script>
   </head>
   <body>
