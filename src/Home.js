@@ -1,21 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
 import styles from './Home.module.css';
 import imgBG from './images/home/home.png';
 
-function Home()
+function Home( {history})
 {
+    const onClick = () => {
+        let address = '/main';
+        history.push(address);
+    }
+
     return (
         <>
         <div className={styles.Home}>
             <div className={styles.Main}>
                 <img className={styles.imgBG} src={imgBG} alt='homeBG'/>
 
-                <Link style={{ textDecoration: 'none', color: 'white'}} to='./main'>
-                    <button className={styles.StartButton}>
+                    <button onClick={onClick} className={styles.StartButton}>
                         <b>테스트 시작하기!</b>
                     </button>
-                </Link>
             </div>
         </div>
         </>

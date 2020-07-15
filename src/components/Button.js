@@ -3,10 +3,12 @@ import styled, { css } from 'styled-components';
 import { darken, lighten } from 'polished';
 
 const colorStyles = css`
-  ${({ theme, color }) => {
+  ${({ theme, color, fontcolor }) => {
     const selected = theme.palette[color];
+    const selectedFont = theme.palette[fontcolor];
     return css`
       background: ${selected};
+      color: ${selectedFont};
       &:hover {
         background: ${lighten(0.1, selected)};
         cursor: pointer;
@@ -44,19 +46,12 @@ const StyledButton = styled.button`
   justify-content: center;
   font-family: 'NanumBarunpen Bold';
 
-  @media all and ( min-width:768px )
+  @media all and ( min-width:530px )
   {
-    margin: 7.68px;
-    width: 76.8px;
-    height: 46.08px;
-    font-size: 23.04px;
-  
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-family: 'NanumBarunpen Bold';
-    
+    margin: 5.3px;
+    width: 79.5px;
+    height: 31.8px;
+    font-size: 15.9px;
   }
 
   /* 색상 */

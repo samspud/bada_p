@@ -16,54 +16,63 @@ const DarkBackground = styled.div`
 `;
 
 const DialogBlock = styled.div`
-  width: 80vw;
-  padding: 5vw;
+  width: 88vw;
+  height: 40vw;
+  padding: 3.25vw;
   background: white;
   border-radius: 2px;
-  h3 {
-    margin: 0;
 
-    font-family: 'NanumBarunpen Bold';
-    font-size: 7vw;
-    text-align: left;
+  h3 {
+    margin-top: 6vw;
+
+    font-family: 'NanumBarunGothicBold';
+    font-size: 6.5vw;
+    text-align: center;
   }
   p {
-    font-family: 'NanumBarunpen Regular';
-    font-size: 5vw;
-    text-align: left;
+    font-family: 'NanumBarunGothic';
+    font-size: 4.44vw;
+    text-align: center;
   }
 
-  @media all and ( min-width:768px )
+  @media all and ( min-width:530px )
   {
-    width: 614.4px;
-    padding: 38.4px;
-    background: white;
+    width: 466.4px;
+    height: 212px;
+    padding: 17.23px;
     border-radius: 2px;
 
     h3 {
-        margin: 0;
-    
-        font-family: 'NanumBarunpen Bold';
-        font-size: 53.76px;
-        text-align: left;
+      margin-top: 31.8px;
+
+      font-size: 34.45px;
       }
-      p {
-        font-family: 'NanumBarunpen Regular';
-        font-size: 38.4px;
-        text-align: left;
-      }
+    p {
+      font-size: 23px;
+    }
   }
 `;
 
 const ButtonGroup = styled.div`
-  margin-top: 3rem;
   display: flex;
   justify-content: flex-end;
 `;
 
 const ShortMarginButton = styled(Button)`
+
+  font-family: 'NotoSansCJKkr R';
+
+  width: 18.87vw;
+
+  font-size: 3.8vw;
   & + & {
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
+  }
+
+  @media all and ( min-width:530px )
+  {
+    width: 100px;
+    font-size: 20.14px;
   }
 `;
 
@@ -84,9 +93,9 @@ function Dialog({
         <ThemeProvider
         theme={{
         palette: {
+            white: '#ffffff',
             blue: '#228be6',
             gray: '#495057',
-            pink: '#f06595'
         }
         }}
     >
@@ -95,11 +104,11 @@ function Dialog({
             <h3>{title}</h3>
             <p>{children}</p>
             <ButtonGroup>
-                <ShortMarginButton onClick={onYes} color="blue">
-                    {yesText}
-                </ShortMarginButton>
-                <ShortMarginButton onClick={onNo} color="blue">
+                <ShortMarginButton onClick={onNo} color="white">
                     {noText}
+                </ShortMarginButton>
+                <ShortMarginButton onClick={onYes} color="white" fontcolor="blue">
+                    {yesText}
                 </ShortMarginButton>
             </ButtonGroup>
         </DialogBlock>

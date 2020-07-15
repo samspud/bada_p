@@ -1,7 +1,4 @@
-@font-face { font-family: 'NanumBarunpen Bold'; src: url(./fonts/NanumBarunpenB.ttf) format('truetype'); }
-
 .Result {
-    
     align-items: center;
     text-align: center;
     display: flex;
@@ -10,21 +7,23 @@
 
 
 .ResultContext {
-    overflow: auto;
-
     align-items: center;
     text-align: center;
 
     display: flex;
     flex-direction: column;
     
-    height: 100vh;
+    height: auto;
     width: 100vw;
 }
 
 .imgBG {
-    position: absolute;
+    height: auto;
+    width: 100vw;
+}
 
+.imgChar {
+    margin-top: -269.5vw;
     height: auto;
     width: 100vw;
 }
@@ -43,139 +42,125 @@
     cursor: pointer;
 }
 
-.Instagram {
-    position: absolute;
-    
-    width: 8.9vw;
-    height: 8.9vw;
+.SNSCover {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-    margin-top: 210.9vw;
-    margin-left: -22.4vw;
+    margin-top: 11.89vw;
+
+    width: 52.83vw;
+    height: 8.9vw;
+}
+
+.Instagram {
+    width: 7.55vw;
+    height: 8.5vw;
+    margin-right: 1.9vw;
 }
 
 .Facebook {
-    position: absolute;
-    
-    width: 8.9vw;
-    height: 8.9vw;
-
-    margin-top: 210.95vw;
-    margin-left: -11.5vw;
+    width: 8.5vw;
+    height: 8.5vw;
+    margin-right: 1.9vw;
 }
 
 .KaKaoTalk {
-    position: absolute;
-    
-    width: 8.9vw;
-    height: 8.9vw;
-
-    margin-top: 210.95vw;
-    margin-left: -0.5vw;
+    width: 8.5vw;
+    height: 8.5vw;
+    margin-right: 1.9vw;
 }
 
 .Twitter {
-    position: absolute;
-    
-    width: 8.9vw;
-    height: 8.9vw;
-
-    margin-top: 210.95vw;
-    margin-left: 10.9vw;
+    width: 8.5vw;
+    height: 8.5vw;
+    margin-right: 1.9vw;
 }
 
 .Line {
-    position: absolute;
-    
-    width: 8.9vw;
-    height: 8.9vw;
-
-    margin-top: 211vw;
-    margin-left: 22vw;
+    width: 8.5vw;
+    height: 8.5vw;
 }
 
 .HelpSite {
-    position: absolute;
+    width: 91.89vw;
+    height: 17.92vw;
 
-    width: 91.67vw;
-    height: 17.5vw;
-
-    margin-top: 236.42vw;
+    margin-top: 16.6vw;
 }
 
-@media all and ( min-width:768px )
+.HelpSiteBtn {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    background-color: #00ff0000;
+    outline: 0;
+}
+
+.HelpSiteBtn:hover {
+    cursor: pointer;
+}
+
+
+@media all and ( min-width:530px )
 {    
     .ResultContext {
-        align-items: center;
-        text-align: center;
-    
-        display: flex;
-        flex-direction: column;
-        
-        height: 100vh;
-        width: 768px;
+        height: auto;
+        width: 530px;
     }
     
     .imgBG {
-        position: absolute;
-    
+        width: 530px;
+    }
+
+    .imgChar {
+        margin-top: -1428.35px;
         height: auto;
-        width: 768px;
+        width: 530px;
+    }
+
+    .SNSCover {
+        margin-top: 63px;
+
+        width: 280px;
+        height: 47.17px;
     }
     
     .Instagram {
-        position: absolute;
-        
-        width: 68.352px;
-        height: 68.352px;
-    
-        margin-top: 1619.712px;
-        margin-left: -172.032px;
+        width: 40px;
+        height: 45px;
+        margin-right: 10px;
     }
     
     .Facebook {
-        position: absolute;
-        
-        width: 68.352px;
-        height: 68.352px;
-    
-        margin-top: 1620.096px;
-        margin-left: -88.32px;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
     }
     
     .KaKaoTalk {
-        position: absolute;
-        
-        width: 68.352px;
-        height: 68.352px;
-    
-        margin-top: 1620.096px;
-        margin-left: -3.84px;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
     }
     
     .Twitter {
-        position: absolute;
-        
-        width: 68.352px;
-        height: 68.352px;
-    
-        margin-top: 1620.096px;
-        margin-left: 83.712px;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
     }
     
     .Line {
-        position: absolute;
-        
-        width: 68.352px;
-        height: 68.352px;
-    
-        margin-top: 1620.48px;
-        margin-left: 168.96px;
+        width: 45px;
+        height: 45px;
     }
 
     .HelpSite {
-        width: 704px;
-        height: 134.4px;
+        width: 487px;
+        height: 95px;
 
-        margin-top: 1815.68px;
+        margin-top: 88px;
     }
 }

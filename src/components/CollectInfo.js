@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled, {ThemeProvider} from 'styled-components';
 import Button from './Button';
-import Input from './Input';
+import TitleImg from '../images/collect/title.png';
+import BottomImg from '../images/collect/info.png';
 
 const DarkBackground = styled.div`
   overflow: scroll;
@@ -11,14 +12,14 @@ const DarkBackground = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
+  
   justify-content: center;
   background: rgba(0, 0, 0, 0.8);
 `;
 
 const InfoBlock = styled.div`
-  width: 90vw;
-  height: auto;
+  width: 100vw;
+  height: 260vw;
 
   display: flex;
   flex-direction: column;
@@ -26,127 +27,180 @@ const InfoBlock = styled.div`
   background: white;
 
   h2 {
-    margin-top: 4vw;
+    margin-top: 6.6vw;
     margin-bottom: 0;
-    margin-left: 3vw;
+    margin-left: 9.17vw;
 
     font-size: 4vw;
     text-align: left;
   }
   p {
     margin-top: 0;
-    margin-left: 3vw;
-    font-size: 3vw;
+    margin-bottom: 0;
+    margin-left: 9.17vw;
+    font-size: 2.97vw;
     text-align: left;
   }
 
-  @media all and ( min-width:768px )
+  @media all and ( min-width:530px )
   {
-    width: 691.2px;
+    width: 530px;
+    height: 1366px;
 
     h2 {
-    margin-top: 30.72px;
-    margin-bottom: 0;
-    margin-left: 23.04px;
+        margin-top: 16.28px;
+        margin-left: 48.6px;
 
-    font-size: 32px;
-    text-align: left;
+        font-size: 21.2px;
     }
-
     p {
-    margin-top: 0;
-    margin-left: 23.04px;
-    font-size: 23.04px;
-    text-align: left;
+        margin-left: 48.6px;
+        font-size: 15.74px;
     }
   }
 `;
+const ImageCover = styled.div`
+  display: flex;
+  text-align:center;
+  justify-content:center;
+  `;
+const TitleImage = styled.img`
+    width: 75.3vw;
+    height: 25.64vw;
 
-const Title1 = styled.div`
-
-    text-align: left;
-
-    width: 80vw;
-    margin: 0;
+    margin-left: -3vw;
     padding: 0.01vw 0;
-    background-color: #f06595;
-    text-align: left;
 
-    h1 {
-        color: white;
-        font-size: 4vw;
-        margin-left: 3vw;
-    }
-
-    @media all and ( min-width:768px )
+    @media all and ( min-width:530px )
     {
-    width: 614.4px;
+        width: 399.09px;
+        height: 135.89px;
 
-    h1 {
-        color: white;
-        font-size: 32px;
-        margin-left: 23.04px;
+        margin-left: -15.9px;
+        padding: 0.53px 0;
+    }
+`;
+const BottomImage = styled.img`
+    width: 100vw;
+    height: 71.3vw;
+
+    @media all and ( min-width:530px )
+    {
+        width: 530px;
+        height: 377.89px;
     }
 `;
 
-const Title2 = styled.div`
+const InputCover = styled.div`
+    width: 60.08vw;
 
-    text-align: left;
+    margin-top: 1.86vw;
+    margin-left: 9.17vw;
 
-    width: 30vw;
-    margin: 0;
-    padding: 0.01vw 0;
-    background-color: #f06595;
-    text-align: left;
-
-    h1 {
-        color: white;
-        font-size: 4vw;
-        margin-left: 3vw;
-    }
-
-    @media all and ( min-width:768px )
+    @media all and ( min-width:530px )
     {
-    width: 240px;
+        width: 318.42px;
 
-    h1 {
-        color: white;
-        font-size: 32px;
-        margin-left: 23.04px;
+        margin-top: 9.86px;
+        margin-left: 48.6px;
+    {
+`;
+const StyledInput = styled.input`
+  background: none;
+
+  padding: 1.2vw;
+
+  border: none;
+  width: 100%;
+  font-size: 3.7vw;
+
+  @media all and ( min-width:530px )
+  {
+    padding: 6.36px;
+
+    font-size: 19.61px;
+  }
+`;
+const StyledInputFile = styled.input`
+  width: 100%;
+  font-size: 3vw;
+
+  @media all and ( min-width:530px )
+  {
+    font-size: 15.9px;
+  }
+`;
+const InputUnderline = styled.div`
+  width: 60.08vw;
+  margin-left: 9.17vw;
+  border: 1px solid #9b9b9b;
+
+  @media all and ( min-width:530px )
+  {
+    width: 318.42px;
+    margin-left: 48.6px;
+  }
+`;
+
+const AgreeCover = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  padding: 3.4vw 0;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2.86vw;
+    font-size: 3.7vw;
+    text-align: left;
+  }
+
+  @media all and ( min-width:530px )
+  {
+    padding: 18.02px 0;
+
+    p {
+        margin-left: 15.16px;
+        font-size: 19.61px;
     }
+  }
+`;
+const StyledCheckbox = styled.input`
+  margin-left: 9.17vw;
+
+  @media all and ( min-width:530px )
+  {
+    margin-left: 48.6px;
+  }
 `;
 
 const ButtonGroup = styled.div`
     margin-top: 1rem;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
 `;
-
 const ShortMarginButton = styled(Button)`
+  width: 22.4vw;
+  height: 9.64vw;
+  border-radius: 3rem;
+  box-shadow: 0 0.3vw 0.5vw 0 #000000;
+  font-size: 3vw;
+  font-family: 'NanumBarunGothicBold';
 
 & + & {
-    margin-left: 0.2rem;
+    margin-left: 1rem;
     }
     outline: 0;
-`;
 
-const InputCover = styled.div`
-    width: 80%;
-
-    margin-left: 3vw;
-    margin-bottom: 10vw;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-
-    @media all and ( min-width:768px )
-        margin-left: 23.04px;
-        margin-bottom: 76.8px;
+    @media all and ( min-width:530px )
     {
-`;
-
-const EventInput = styled(Input)`
-    
+        width: 118.72px;
+        height: 51.09px;
+        border-radius: 3rem;
+        box-shadow: 0 1.59px 2.65px 0 #000000;
+        font-size: 15.9px;
+    }
 `;
 
 function CollectInfo({ 
@@ -154,71 +208,183 @@ function CollectInfo({
     onCancel,
     visible
  }) {
+    const [inputs, setInputs] = useState({
+        name: '',
+        phone: '',
+        url: '',
+        image: '',
+        isChecked: false
+    });
+
+    const {name, phone, url, image, isChecked} = inputs;
+
+    const onInnerConfrim = () => {
+        if (isChecked && name !== '' && phone !== '' && (url !== '' || image !== ''))
+        {
+            onConfirm();
+            onReset();
+        }
+    }
+
+    const onInnerCancel = () => {
+        onReset();
+        onCancel();
+    }
+
+    const onChange = (e) => {
+        switch(e.target.name)
+        {
+            case 'name':
+            case 'phone':
+            case 'url':
+                {
+                    const { value, name } = e.target;
+                    setInputs({
+                        ...inputs, 
+                        [name]: value
+                    });
+
+                    break;
+                }
+            case 'image':
+                {
+                    const { value, name } = e.target;
+
+                    let file = e.target.files[0];
+
+                    setInputs({
+                        ...inputs,
+                        [name]: value
+                    });
+
+                    break;
+                }
+            case 'isChecked':
+                {
+                    const { checked, name } = e.target;
+                    setInputs({
+                        ...inputs,
+                        [name]: checked
+                    });
+
+                    break; 
+                }
+            default:
+                break;
+        }
+    };
+
+    const onReset = () => {
+        setInputs({
+            name: '',
+            phone: '',
+            url: '',
+            image: '',
+            isChecked: false
+          })
+    };
+
     if (!visible) {
         return null;
     }
+
     return (
         <ThemeProvider
         theme={{
         palette: {
-            blue: '#228be6',
-            gray: '#495057',
-            pink: '#f06595'
+            sky: '#c1dbef',
+            grayshallow: '#ebebeb',
         }
         }}
     >
         <DarkBackground>
         <InfoBlock>
-            <Title1>
-                <h1><li>개인정보 수집 및 이용 동의 안내</li></h1>
-            </Title1>
-            <p>
-                <br/>
-                1. 수집하는 항목 : 이름(실명), 휴대폰번호
-                <br/>
-                2. 개인정보 수집 이용 목적 : 당첨자에 대한 이벤트 경품 제공
-                <br/>
-                3. 개인정보의 보유 및 이용 기간 : 이벤트 경품 제공 완료 후 7일
-            </p>
+            <ImageCover>
+            <TitleImage src={TitleImg}/>
+            </ImageCover>
+
             <h2>
-                이름 (실명)
+                이름 (실명) *
             </h2>
             <p>
                 본인 실명을 입력해주세요
             </p>
             <InputCover>
-            <EventInput placeholder="이름"/>
+            <StyledInput name="name" onChange={onChange} placeholder="내 답변(필수)"/>
             </InputCover>
+            <InputUnderline/>
 
             <h2>
-                휴대폰 번호
+                휴대폰 번호 *
             </h2>
             <p>
-                하이폰 삽입하여 입력해주세요. (예) 010-1234-5678
+                하이폰을 삽입하여 입력해주세요. (예) 010-1234-5678
             </p>
             <InputCover>
-            <EventInput placeholder="번호"/>
+            <StyledInput name="phone" onChange={onChange} placeholder="내 답변(필수)"/>
             </InputCover>
+            <InputUnderline/>
 
-            <Title2>
-                <h1>확인해주세요</h1>
-            </Title2>
+            <h2>
+                공유 내용
+            </h2>
+            <br/>
+            <p><b>
+                1번 또는 2번 중 하나를 골라 입력해주세요.
+            </b></p>
+            <br/>
             <p>
-                <br/>
-                * 어쩌고저쩌고
-                <br/>
-                * 어쩌고저쩌고
-                <br/>
-                * 어쩌고저쩌고
-                <br/>
-                * 어쩌고저쩌고
+                1. 테스트를 공유한 SNS 게시글의 URL을 입력해주세요.
             </p>
+            <p>
+                (페이스북, 인스타그램, 트위터 등)
+            </p>
+            <InputCover>
+            <StyledInput name="url" onChange={onChange} placeholder="내 답변"/>
+            </InputCover>
+            <InputUnderline/>
+
+            <br/>
+            <p>
+                2. 테스트를 공유한 메신저의 캡처 이미지(JPG. PNG.)를 선택해주세요.
+            </p>
+            <p>
+                (카카오톡, 라인 등)
+            </p>
+            <InputCover>
+            <StyledInputFile
+                name="image"
+                accept='image/jpg,image/png'
+                onChange={onChange}
+                type="file"
+                value={image.name}
+            />
+            </InputCover>
+            <br/>
+            <br/>
+            <ImageCover>
+            <BottomImage src={BottomImg}/>
+            </ImageCover>
+
+            <AgreeCover>
+
+            <StyledCheckbox
+                name="isChecked"
+                onChange={onChange}
+                type="checkbox"
+            />
+            <p>
+                위 개인정보 수집 및 이용안내에 동의합니다. 
+            </p>
+            
+            
+            </AgreeCover>
             <ButtonGroup>
-            <ShortMarginButton onClick={onConfirm} color="pink">
-                제출
+            <ShortMarginButton onClick={onInnerCancel} color="grayshallow">
+                취소하기
             </ShortMarginButton>
-            <ShortMarginButton onClick={onCancel} color="pink">
-                취소
+            <ShortMarginButton onClick={onInnerConfrim} color="sky">
+                제출하기
             </ShortMarginButton>
             </ButtonGroup>
         </InfoBlock>

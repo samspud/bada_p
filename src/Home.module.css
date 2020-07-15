@@ -1,12 +1,9 @@
-@font-face { font-family: 'NanumBarunpen Bold'; src: url(./fonts/NanumBarunpenB.ttf) format('truetype'); }
-
 .Home {
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-
 
 .Main {
     align-items: center;
@@ -15,20 +12,17 @@
     display: flex;
     flex-direction: column;
     
-    height: 100vh;
+    height: auto;
     width: 100vw;
 }
 
 .imgBG {
-    position: absolute;
-
     height: auto;
     width: 100vw;
 }
 
 .StartButton {
-    position: absolute;
-    transform: translate(-50%, 50%);
+    position: relative;
 
     color: white;
     background: #2e425c;
@@ -38,62 +32,42 @@
     font-family: 'NanumBarunpen Bold';
     line-height: 5.58vw;
 
-    border: 3px solid #95c8e6;
+    border: 0.57vw solid #95c8e6;
     border-radius: 4.41vw;
     box-shadow: 0 0 1.08vw 0 #008cff;
     outline: 0;
 
-    margin-top: 114vw;
+    margin-top: -56.6vw;
 
     font-size: 4vw;
 }
 
-@media all and ( min-width:768px ) {
-    .Home {
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
+.StartButton:hover {
+    cursor: pointer;
+}
+
+@media all and ( min-width:530px ) {
     .Main {
-        align-items: center;
-        text-align: center;
-    
-        display: flex;
-        flex-direction: column;
-        
         height: 100vh;
-        width: 768px;
+        width: 530px;
     }
     
     .imgBG {
-        position: absolute;
-    
         height: auto;
-        width: 768px;
+        width: 530px;
     }
     
     .StartButton {
-        position: absolute;
-        transform: translate(-50%, 50%);
-    
-        color: white;
-        background: #2e425c;
-        
-        padding: 17.28px 42.24px;
-    
-        font-family: 'NanumBarunpen Bold';
-        line-height: 42.88px;
+        padding: 11.925px 29.15px;
+
+        line-height: 29.59px;
     
         border: 3px solid #95c8e6;
-        border-radius: 33.92px;
-        box-shadow: 0 0 8.32px 0 #008cff;
-        outline: 0;
+        border-radius: 23.41px;
+        box-shadow: 0 0 5.74px 0 #008cff;
     
-        margin-top: 874px;
+        margin-top: -300px;
     
-        font-size: 30.72px;
+        font-size: 21.2px;
     }
 }

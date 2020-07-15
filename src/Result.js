@@ -21,6 +21,8 @@ import C_14 from './images/result/1101.png'
 import C_15 from './images/result/1110.png'
 import C_16 from './images/result/1111.png'
 
+let code = '';
+
 function GetImageChar(props)
 {
     // type 0 : 자아존중감, 1 : 스트레스 표출, 2 : 대인관계 스트레스, 3 : 의무
@@ -29,82 +31,80 @@ function GetImageChar(props)
     const v_2 = parseInt((props % 100) / 10);
     const v_3 = parseInt(props % 10);
     
-    const code = v_3.toString() + v_2.toString() + v_0.toString() + v_1.toString();
+    code = v_3.toString() + v_2.toString() + v_0.toString() + v_1.toString();
 
     switch (code)
     {
         case '0000':
             return (
-                <img className={styles.imgBG} src={C_1} alt='character'/>
+                <img className={styles.imgChar} src={C_1} alt='character'/>
             );
         case '0001':
             return (
-                <img className={styles.imgBG} src={C_2} alt='character'/>
+                <img className={styles.imgChar} src={C_2} alt='character'/>
             );
         case '0010':
             return (
-                <img className={styles.imgBG} src={C_3} alt='character'/>
+                <img className={styles.imgChar} src={C_3} alt='character'/>
             );
         case '0011':
             return (
-                <img className={styles.imgBG} src={C_4} alt='character'/>
+                <img className={styles.imgChar} src={C_4} alt='character'/>
             );
         case '0100':
             return (
-                <img className={styles.imgBG} src={C_5} alt='character'/>
+                <img className={styles.imgChar} src={C_5} alt='character'/>
             );
         case '0101':
             return (
-                <img className={styles.imgBG} src={C_6} alt='character'/>
+                <img className={styles.imgChar} src={C_6} alt='character'/>
             );
         case '0110':
             return (
-                <img className={styles.imgBG} src={C_7} alt='character'/>
+                <img className={styles.imgChar} src={C_7} alt='character'/>
             );
         case '0111':
             return (
-                <img className={styles.imgBG} src={C_8} alt='character'/>
+                <img className={styles.imgChar} src={C_8} alt='character'/>
             );
         case '1000':
             return (
-                <img className={styles.imgBG} src={C_9} alt='character'/>
+                <img className={styles.imgChar} src={C_9} alt='character'/>
             );
         case '1001':
             return (
-                <img className={styles.imgBG} src={C_10} alt='character'/>
+                <img className={styles.imgChar} src={C_10} alt='character'/>
             );
         case '1010':
             return (
-                <img className={styles.imgBG} src={C_11} alt='character'/>
+                <img className={styles.imgChar} src={C_11} alt='character'/>
             );
         case '1011':
             return (
-                <img className={styles.imgBG} src={C_12} alt='character'/>
+                <img className={styles.imgChar} src={C_12} alt='character'/>
             );
         case '1100':
             return (
-                <img className={styles.imgBG} src={C_13} alt='character'/>
+                <img className={styles.imgChar} src={C_13} alt='character'/>
             );
         case '1101':
             return (
-                <img className={styles.imgBG} src={C_14} alt='character'/>
+                <img className={styles.imgChar} src={C_14} alt='character'/>
             );
         case '1110':
             return (
-                <img className={styles.imgBG} src={C_15} alt='character'/>
+                <img className={styles.imgChar} src={C_15} alt='character'/>
             );
         case '1111':
             return (
-                <img className={styles.imgBG} src={C_16} alt='character'/>
+                <img className={styles.imgChar} src={C_16} alt='character'/>
             );
         default:
             return (
-                <img className={styles.imgBG} src={C_1} alt='character'/>
+                <img className={styles.imgChar} src={C_1} alt='character'/>
             );
     }
 }
-
-let didEvent = false;
 
 function Result( {match})
 {
@@ -127,13 +127,11 @@ function Result( {match})
         //설문 비동의
         setDialog(false);
         setEvent(false);
-        didEvent = false;
     };
 
     const onConfirm = () => {
         //설문제출
         setEvent(false);
-        didEvent = true;
     };
 
     const onCancel = () => {
@@ -148,6 +146,28 @@ function Result( {match})
         {
             case 0:
                 {
+                    const mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
+                    const userAgent = navigator.userAgent.toLowerCase();
+
+                    console.log(mobile);
+                    console.log(userAgent);
+
+                    if (mobile) {
+                        if ( userAgent.indexOf('android') > -1) {
+                            //안드로이드
+                            window.open('intent://instagram.com/#Intent;package=com.instagram.android;scheme=https;end','blank');
+                        } else if ( userAgent.indexOf("iphone") > -1||userAgent.indexOf("ipad") > -1||userAgent.indexOf("ipod") > -1 ) {
+                            //IOS
+                            window.open('instagram://media','blank');
+                        } else {
+                            //아이폰, 안드로이드 외
+                            window.open('https://www.instagram.com/direct/inbox/','blank');
+                        }
+                    }
+                    else {
+                        window.open('https://www.instagram.com/direct/inbox/','blank');
+                    }
+                    
                     break; 
                 }
                 
@@ -159,41 +179,60 @@ function Result( {match})
                 
             case 2:
                 {
-                    
-                    // window.Kakao.Link.createDefaultButton({ 
-                    //     container: '#kakao', 
-                    //     objectType: 'feed', 
-                    //     content: {
-                    //         title: '', 
-                    //         description: '',
-                    //         imageUrl: 'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
-                    //         link: { 
-                    //             webUrl: 'https://google.com' 
-                    //         } 
-                    //     }
-                    // }
-                    // )
+                    window.Kakao.Link.sendDefault({
+                        objectType: 'feed',
+                        content: {
+                          title: '1388 Find Freinds',
+                          description: '나는 무슨 바다친구?',
+                          imageUrl:
+                            'http://fonfonsea1388.me/static/media/home.a8d19f09.png',
+                          link: {
+                            mobileWebUrl: 'http://fonfonsea1388.me',
+                            androidExecParams: 'test',
+                          },
+                        },
+                        social: {
+                          likeCount: 10,
+                          commentCount: 20,
+                          sharedCount: 30,
+                        },
+                        buttons: [
+                          {
+                            title: '웹으로 이동',
+                            link: {
+                              mobileWebUrl: 'http://fonfonsea1388.me',
+                            }, 
+                          },
+                        ],
+                        success: function(response) {
+                          console.log(response);
+                        },
+                        fail: function(error) {
+                          console.log(error);
+                        }
+                      });
                     break;
                 }
     
             case 3:
                 {
-                    window.open("https://twitter.com/intent/tweet?via=kipacti&url=http://fonfonsea1388.me/",'blank');
+                    window.open("https://twitter.com/intent/tweet?&url=http://fonfonsea1388.me/",'blank');
                     break;
                 }
          
             case 4:
                 {
+                    const sns_title = "1388 바다";
+                    const sns_summary = "바다 친구들";
+                    const sns_br = "\n";
+                    const url = "https://social-plugins.line.me/lineit/share?url=http://fonfonsea1388.me&text=" + encodeURIComponent(sns_title + sns_br + sns_summary + sns_br);
+                    window.open(url, 'blank');
                     break;
                 }
                
             default:
                 break;
         }
-
-        //newWindow.document.getElementById("");
-
-        didEvent = false;
     }
 
     const onClickHelp = () => {
@@ -214,35 +253,38 @@ function Result( {match})
                     {GetImageChar(match.params.code)}
 
                     {/* 공유기능 */}
-                    <div className={styles.Instagram}>
-                        <button onClick={() => onClickShare(0)} className={styles.SNSButton}>
+                    <div className={styles.SNSCover}>
+                        <div className={styles.Instagram}>
+                            <button onClick={() => onClickShare(0)} className={styles.SNSButton}>
 
-                        </button>
+                            </button>
+                        </div>
+                        <div className={styles.Facebook}>
+                            <button onClick={() => onClickShare(1)} className={styles.SNSButton}>
+
+                            </button>
+                        </div>
+                        <div id="kakao" className={styles.KaKaoTalk}>
+                            <button onClick={() => onClickShare(2)} className={styles.SNSButton}>
+
+                            </button>
+                        </div>
+                        <div className={styles.Twitter}>
+                            <button onClick={() => onClickShare(3)} className={styles.SNSButton}>
+
+                            </button>
+                        </div>
+                        <div className={styles.Line}>
+                            <button onClick={() => onClickShare(4)} className={styles.SNSButton}>
+                            
+                            </button>
+                        </div>
                     </div>
-                    <div className={styles.Facebook}>
-                        <button onClick={() => onClickShare(1)} className={styles.SNSButton}>
-
-                        </button>
+                    
+                    <div className={styles.HelpSite}>
+                        <button className={styles.HelpSiteBtn} onClick={onClickHelp}/>
                     </div>
-                    <div id="kakao" className={styles.KaKaoTalk}>
-                        <button onClick={() => onClickShare(2)} className={styles.SNSButton}>
-
-                        </button>
-                    </div>
-                    <div className={styles.Twitter}>
-                        <button onClick={() => onClickShare(3)} className={styles.SNSButton}>
-
-                        </button>
-                    </div>
-                    <div className={styles.Line}>
-                        <button onClick={() => onClickShare(4)} className={styles.SNSButton}>
-
-                        </button>
-                    </div>
-
-                    <div className={styles.HelpSite} onClick={onClickHelp}>
-
-                    </div>
+                    
 
                     <Dialog
                         title="이벤트에 참여하시겠습니까?"
