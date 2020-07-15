@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bada_p/static/css/main.57b49cb7.chunk.css",
-    "main.js": "/bada_p/static/js/main.4caabc38.chunk.js",
-    "main.js.map": "/bada_p/static/js/main.4caabc38.chunk.js.map",
+    "main.css": "/bada_p/static/css/main.d0a7ebc7.chunk.css",
+    "main.js": "/bada_p/static/js/main.31ed50c3.chunk.js",
+    "main.js.map": "/bada_p/static/js/main.31ed50c3.chunk.js.map",
     "runtime-main.js": "/bada_p/static/js/runtime-main.3d911b1c.js",
     "runtime-main.js.map": "/bada_p/static/js/runtime-main.3d911b1c.js.map",
-    "static/js/2.aaff371b.chunk.js": "/bada_p/static/js/2.aaff371b.chunk.js",
-    "static/js/2.aaff371b.chunk.js.map": "/bada_p/static/js/2.aaff371b.chunk.js.map",
+    "static/js/2.29c25cc0.chunk.js": "/bada_p/static/js/2.29c25cc0.chunk.js",
+    "static/js/2.29c25cc0.chunk.js.map": "/bada_p/static/js/2.29c25cc0.chunk.js.map",
     "index.html": "/bada_p/index.html",
-    "precache-manifest.e9249169faabc78da7720d2abf489ab7.js": "/bada_p/precache-manifest.e9249169faabc78da7720d2abf489ab7.js",
+    "precache-manifest.e782818ff1bb8d03d44aaa9cafbe8bd7.js": "/bada_p/precache-manifest.e782818ff1bb8d03d44aaa9cafbe8bd7.js",
     "service-worker.js": "/bada_p/service-worker.js",
-    "static/css/main.57b49cb7.chunk.css.map": "/bada_p/static/css/main.57b49cb7.chunk.css.map",
-    "static/js/2.aaff371b.chunk.js.LICENSE.txt": "/bada_p/static/js/2.aaff371b.chunk.js.LICENSE.txt",
+    "static/css/main.d0a7ebc7.chunk.css.map": "/bada_p/static/css/main.d0a7ebc7.chunk.css.map",
+    "static/js/2.29c25cc0.chunk.js.LICENSE.txt": "/bada_p/static/js/2.29c25cc0.chunk.js.LICENSE.txt",
     "static/media/0000.png": "/bada_p/static/media/0000.9bf08acd.png",
     "static/media/0001.png": "/bada_p/static/media/0001.d305059b.png",
     "static/media/0010.png": "/bada_p/static/media/0010.74edaeae.png",
@@ -41,13 +41,14 @@
     "static/media/home.png": "/bada_p/static/media/home.a8d19f09.png",
     "static/media/info.png": "/bada_p/static/media/info.8db18df5.png",
     "static/media/main.png": "/bada_p/static/media/main.05396456.png",
-    "static/media/result.png": "/bada_p/static/media/result.8a47a501.png",
+    "static/media/price.png": "/bada_p/static/media/price.2af7fd3f.png",
+    "static/media/result.png": "/bada_p/static/media/result.2c8cfcba.png",
     "static/media/title.png": "/bada_p/static/media/title.d4d4fa71.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3d911b1c.js",
-    "static/js/2.aaff371b.chunk.js",
-    "static/css/main.57b49cb7.chunk.css",
-    "static/js/main.4caabc38.chunk.js"
+    "static/js/2.29c25cc0.chunk.js",
+    "static/css/main.d0a7ebc7.chunk.css",
+    "static/js/main.31ed50c3.chunk.js"
   ]
 }
