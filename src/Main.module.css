@@ -108,7 +108,49 @@
     margin-top: 2vw;
 }
 
-.Circle {
+.Circle_1 {
+    position: absolute;
+
+    width: 7.25vw;
+    height: 7.25vw;
+
+    margin-top: -11vw;
+    margin-left: 3vw;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'NanumBarunpen Bold';
+    font-size: 4.16vw;
+
+    background-color: white;
+    border-radius: 10rem;
+}
+
+.Circle_2 {
+    position: absolute;
+
+    width: 7.25vw;
+    height: 7.25vw;
+
+    margin-top: -11vw;
+    margin-left: 3vw;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'NanumBarunpen Bold';
+    font-size: 4.16vw;
+
+    background-color: white;
+    border-radius: 10rem;
+}
+
+.Circle_3 {
     position: absolute;
 
     width: 7.25vw;
@@ -137,106 +179,126 @@
     margin-left: 5.33vw;
 }
 
-@media all and ( min-width:600px ) {
+@media all and ( min-width:530px ) {
     .MainContext {
-        height: 100vh;
-        width: auto;
+        height: auto;
+        width: 530px;
     }
     
     .imgBG {
-        height: 100vh;
-        width: auto;
+        height: auto;
+        width: 530px;
     }
     
     .Number {
-        margin-top: -98vh;
-        margin-left: -2vh;
+        margin-top: -925px;
+        margin-left: -14px;
     
-        font-size: 4.69vh;
+        font-size: 44px;
     }
     
     .TitleBox {
-        width: 48.5vh;
-        height: 12.5vh;
+        width: 455.8px;
+        height: 120.58px;
         
-        margin-top: -1.8vh;
+        margin-top: -14.84px;
 
-        font-size: 2.53vh;
+        font-size: 24.27px;
     }
     
     .Title {
-        padding: 2.53vh 2.44vh ;
+        padding: 24.27px 23.37px ;
     }
     
     .ImageBox {
-        width: 34.5vh;
-        height: 34.5vh;
+        width: 331.25px;
+        height: 331.25px;
 
-        margin-top: 5vh;
+        margin-top: 40.6px;
     }
     
     .QuestionBox {
-        border-radius: 1.82vh;
+        border-radius: 17.49px;
 
-        box-shadow: 0 0 0.78vh 0 #85000000;
+        box-shadow: 0 0 7.47px 0 #85000000;
     }
 
     .Question_1 {
-        width: 48.22vh;
-        height: 7.96vh;
+        width: 462.425px;
+        height: 76.33px;
         
-        margin-top: 4.17vh;
+        margin-top: 40px;
 
-        font-size: 3.08vh;
+        font-size: 29.57px;
 
-        border-radius: 1.82vh;
+        border-radius: 17.49px;
         outline: 0;
     
-        box-shadow: 0 0 0.78vh 0 #85000000;
+        box-shadow: 0 0 7.47px 0 #85000000;
     }
     
     .Question_2 {
-        width: 48.22vh;
-        height: 7.96vh;
+        width: 462.425px;
+        height: 76.33px;
         
-        margin-top: 1.56vh;
+        margin-top: 15px;
 
-        font-size: 3.08vh;
+        font-size: 29.57px;
 
-        border-radius: 1.82vh;
+        border-radius: 17.49px;
         outline: 0;
     
-        box-shadow: 0 0 0.78vh 0 #85000000;
+        box-shadow: 0 0 7.47px 0 #85000000;
     }
     
     .Question_3 {
-        width: 48.22vh;
-        height: 7.96vh;
+        width: 462.425px;
+        height: 76.33px;
         
-        margin-top: 1.56vh;
+        margin-top: 15px;
 
-        font-size: 3.08vh;
+        font-size: 29.57px;
 
-        border-radius: 1.82vh;
+        border-radius: 17.49px;
         outline: 0;
     
-        box-shadow: 0 0 0.78vh 0 #85000000;
+        box-shadow: 0 0 7.47px 0 #85000000;
     }
 
-    .Circle {
-        width: 4.01vh;
-        height: 4.01vh;
+    .Circle_1 {
+        width: 38.43px;
+        height: 38.43px;
     
-        margin-top: -6.08vh;
-        margin-left: 1.66vh;
+        margin-top: -58.3px;
+        margin-left: 15.9px;
 
-        font-size: 2.3vh;
+        font-size: 22.05px;
     }
+    
+    .Circle_2 {
+        width: 38.43px;
+        height: 38.43px;
+    
+        margin-top: -58.3px;
+        margin-left: 15.9px;
 
+        font-size: 22.05px;
+    }
+    
+    .Circle_3 {
+        width: 38.43px;
+        height: 38.43px;
+    
+        margin-top: -58.3px;
+        margin-left: 15.9px;
+
+        font-size: 22.05px;
+    }
+    
     .QuestionText {
-        font-size: 2.01vh;
+        font-size: 19.3px;
     
-        padding: 0.87vh 3.82vh;
-        margin-left: 2.95vh;
+        padding: 8.37px 36.62px;
+        margin-left: 28.25px;
     }
 }

@@ -50,7 +50,27 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
       Kakao.init('94a93ce8b33b626fe9bd60d85d0efb42');
-    </script>    
+    </script>
+
+    <!--네이버 애널리틱스-->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "7518e89274bba8";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172708151-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172708151-1');
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -65,25 +85,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    
-    <!--네이버 애널리틱스-->
-    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
-    <script type="text/javascript">
-    if(!wcs_add) var wcs_add = {};
-    wcs_add["wa"] = "73cf2353e7e258";
-    if(window.wcs) {
-    wcs_do();
-    }
-    </script>
-
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172708151-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-172708151-1');
-    </script>
   </body>
 </html>

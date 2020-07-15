@@ -46,28 +46,28 @@
     cursor: pointer;
 }
 
-@media all and ( min-width:600px) {
+@media all and ( min-width:530px ) {
     .Main {
         height: 100vh;
-        width: auto;
+        width: 530px;
     }
     
     .imgBG {
-        height: 100vh;
-        width: auto;
+        height: auto;
+        width: 530px;
     }
     
     .StartButton {
-        padding: 1.27vh 3.1vh;
+        padding: 11.925px 29.15px;
 
-        line-height: 3.15vh;
+        line-height: 29.59px;
     
-        border: 0.32vh solid #95c8e6;
-        border-radius: 2.5vh;
-        box-shadow: 0 0 0.61vh 0 #008cff;
+        border: 3px solid #95c8e6;
+        border-radius: 23.41px;
+        box-shadow: 0 0 5.74px 0 #008cff;
     
-        margin-top: -32.33vh;
+        margin-top: -300px;
     
-        font-size: 2.34vh;
+        font-size: 21.2px;
     }
 }

@@ -42,7 +42,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://samspud.github.io/bada_p/",
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }

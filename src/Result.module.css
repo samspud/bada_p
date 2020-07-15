@@ -107,8 +107,8 @@
 @media all and ( min-width:530px )
 {    
     .ResultContext {
-        height: 100vh;
-        width: auto;
+        height: auto;
+        width: 530px;
     }
     
     .imgBG {
