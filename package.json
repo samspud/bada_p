@@ -1,13 +1,13 @@
-{
-  "name": "bada-p",
+{   "name": "bada-p",
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
-    "start": "node server.js"
+    "start": "node web.js"
   },
   "dependencies": {
+    "socket.io": "latest",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "express": "^4.16.4",
@@ -18,7 +18,7 @@
     "concurrently": "^4.0.1"
   },
   "description": "bada",
-  "main": "server.js",
+  "main": "web.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samspud/bada_p.git"
@@ -30,6 +30,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/samspud/bada_p/issues"
-  },
-  "homepage": "https://github.com/samspud/bada_p#readme"
+  }
 }
