@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face { font-family: 'NanumBarunGothicBold'; src: url(./fonts/NanumBarunGothicBold.ttf) format('truetype'); }
+@font-face { font-family: 'NanumBarunpen Bold'; src: url(./fonts/NanumBarunpenB.ttf) format('truetype'); }
+@font-face { font-family: 'NanumBarunGothic'; src: url(./fonts/NanumBarunGothic.ttf) format('truetype'); }
+@font-face { font-family: 'NotoSansCJKkr R'; src: url(./fonts/NotoSansCJKkr-Regular.otf) format('truetype'); }

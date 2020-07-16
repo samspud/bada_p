@@ -1,0 +1,166 @@
+.Result {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ResultContext {
+    align-items: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    width: 100vw;
+}
+
+.imgBG {
+    height: auto;
+    width: 100vw;
+}
+
+.imgChar {
+    margin-top: -269.5vw;
+    height: auto;
+    width: 100vw;
+}
+
+.SNSButton {
+    opacity: 0;
+
+    border-radius: 0.8rem;
+    outline: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.SNSButton:hover {
+    cursor: pointer;
+}
+
+.SNSCover {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 11.89vw;
+
+    width: 52.83vw;
+    height: 8.9vw;
+}
+
+.Instagram {
+    width: 7.55vw;
+    height: 8.5vw;
+    margin-right: 1.9vw;
+}
+
+.Facebook {
+    width: 8.5vw;
+    height: 8.5vw;
+    margin-right: 1.9vw;
+}
+
+.KaKaoTalk {
+    width: 8.5vw;
+    height: 8.5vw;
+    margin-right: 1.9vw;
+}
+
+.Twitter {
+    width: 8.5vw;
+    height: 8.5vw;
+    margin-right: 1.9vw;
+}
+
+.Line {
+    width: 8.5vw;
+    height: 8.5vw;
+}
+
+.HelpSite {
+    width: 91.89vw;
+    height: 17.92vw;
+
+    margin-top: 16.6vw;
+}
+
+.HelpSiteBtn {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    background-color: #00ff0000;
+    outline: 0;
+}
+
+.HelpSiteBtn:hover {
+    cursor: pointer;
+}
+
+
+@media all and ( min-width:530px )
+{    
+    .ResultContext {
+        height: 100vh;
+        width: auto;
+    }
+    
+    .imgBG {
+        width: 530px;
+    }
+
+    .imgChar {
+        margin-top: -1428.35px;
+        height: auto;
+        width: 530px;
+    }
+
+    .SNSCover {
+        margin-top: 63px;
+
+        width: 280px;
+        height: 47.17px;
+    }
+    
+    .Instagram {
+        width: 40px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    
+    .Facebook {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    
+    .KaKaoTalk {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    
+    .Twitter {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
+    
+    .Line {
+        width: 45px;
+        height: 45px;
+    }
+
+    .HelpSite {
+        width: 487px;
+        height: 95px;
+
+        margin-top: 88px;
+    }
+}
