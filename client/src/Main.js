@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Main.module.css'
-import imgBGMain from './images/main/main.png'
+import imgBGMain from './images/main/main.jpg'
 import C_1 from './images/main/1.png'
 import C_2 from './images/main/2.png'
 import C_3 from './images/main/3.png'
@@ -202,6 +202,9 @@ function Main( {history} )
 
             let address = '/result/' + value;
             history.push(address);
+            if(window.wcs) {
+                window.wcs_do();
+            }
         }
         else
             onNext();

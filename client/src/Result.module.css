@@ -58,29 +58,39 @@
     width: 7.55vw;
     height: 8.5vw;
     margin-right: 1.9vw;
+
+    border: 0.5px solid #00ff0000;
 }
 
 .Facebook {
     width: 8.5vw;
     height: 8.5vw;
     margin-right: 1.9vw;
+    
+    border: 0.5px solid #00ff0000;
 }
 
 .KaKaoTalk {
     width: 8.5vw;
     height: 8.5vw;
     margin-right: 1.9vw;
+
+    border: 0.5px solid #00ff0000;
 }
 
 .Twitter {
     width: 8.5vw;
     height: 8.5vw;
     margin-right: 1.9vw;
+
+    border: 0.5px solid #00ff0000;
 }
 
 .Line {
     width: 8.5vw;
     height: 8.5vw;
+
+    border: 0.5px solid #00ff0000;
 }
 
 .HelpSite {
@@ -125,7 +135,7 @@
         margin-top: 63px;
 
         width: 280px;
-        height: 47.17px;
+        min-height: 47.17px;
     }
     
     .Instagram {

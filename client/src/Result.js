@@ -3,23 +3,23 @@ import styles from './Result.module.css'
 import Dialog from './components/Dialog'
 import Event from './components/CollectInfo'
 
-import imgBGResult from './images/result/result.png'
-import C_1 from './images/result/0000.png'
-import C_2 from './images/result/0001.png'
-import C_3 from './images/result/0010.png'
-import C_4 from './images/result/0011.png'
-import C_5 from './images/result/0100.png'
-import C_6 from './images/result/0101.png'
-import C_7 from './images/result/0110.png'
-import C_8 from './images/result/0111.png'
-import C_9 from './images/result/1000.png'
-import C_10 from './images/result/1001.png'
-import C_11 from './images/result/1010.png'
-import C_12 from './images/result/1011.png'
-import C_13 from './images/result/1100.png'
-import C_14 from './images/result/1101.png'
-import C_15 from './images/result/1110.png'
-import C_16 from './images/result/1111.png'
+import imgBGResult from './images/result/result.jpg'
+import C_1 from './images/result/0000.jpg'
+import C_2 from './images/result/0001.jpg'
+import C_3 from './images/result/0010.jpg'
+import C_4 from './images/result/0011.jpg'
+import C_5 from './images/result/0100.jpg'
+import C_6 from './images/result/0101.jpg'
+import C_7 from './images/result/0110.jpg'
+import C_8 from './images/result/0111.jpg'
+import C_9 from './images/result/1000.jpg'
+import C_10 from './images/result/1001.jpg'
+import C_11 from './images/result/1010.jpg'
+import C_12 from './images/result/1011.jpg'
+import C_13 from './images/result/1100.jpg'
+import C_14 from './images/result/1101.jpg'
+import C_15 from './images/result/1110.jpg'
+import C_16 from './images/result/1111.jpg'
 
 let code = '';
 
@@ -278,7 +278,7 @@ function Result( {match})
                     </div>
                     
 
-                    <Dialog
+                    {/* <Dialog
                         title="이벤트에 참여하시겠습니까?"
                         yesText="예"
                         noText="아니오"
@@ -287,7 +287,7 @@ function Result( {match})
                         visible={dialog}
                         >
                             참여하시면 개인정보 동의 창으로 넘어갑니다.
-                    </Dialog>
+                    </Dialog> */}
                     <Event
                         onConfirm={onConfirm}
                         onCancel={onCancel}
