@@ -170,7 +170,7 @@ function Result( {match})
                 
             case 1:
                 {
-                    window.open('http://www.facebook.com/sharer.php?u=http://fonfonsea1388.me/&p[images][0]=','blank');
+                    window.open('http://www.facebook.com/sharer.php?u=http://1388findfriend.kr/&p[images][0]=','blank');
                     break;
                 }
                 
@@ -182,9 +182,9 @@ function Result( {match})
                           title: '1388 Find Freinds',
                           description: '나는 무슨 바다친구?',
                           imageUrl:
-                            'http://fonfonsea1388.me/static/media/home.a8d19f09.png',
+                            'http://1388findfriend.kr/static/media/home.a8d19f09.png',
                           link: {
-                            mobileWebUrl: 'http://fonfonsea1388.me',
+                            mobileWebUrl: 'http://1388findfriend.kr/',
                             androidExecParams: 'test',
                           },
                         },
@@ -192,7 +192,7 @@ function Result( {match})
                           {
                             title: '웹으로 이동',
                             link: {
-                              mobileWebUrl: 'http://fonfonsea1388.me',
+                              mobileWebUrl: 'http://1388findfriend.kr/',
                             }, 
                           },
                         ],
@@ -208,7 +208,7 @@ function Result( {match})
     
             case 3:
                 {
-                    window.open("https://twitter.com/intent/tweet?&url=http://fonfonsea1388.me/",'blank');
+                    window.open("https://twitter.com/intent/tweet?&url=http://1388findfriend.kr/",'blank');
                     break;
                 }
          
@@ -217,7 +217,7 @@ function Result( {match})
                     const sns_title = "1388 바다";
                     const sns_summary = "바다 친구들";
                     const sns_br = "\n";
-                    const url = "https://social-plugins.line.me/lineit/share?url=http://fonfonsea1388.me&text=" + encodeURIComponent(sns_title + sns_br + sns_summary + sns_br);
+                    const url = "https://social-plugins.line.me/lineit/share?url=http://1388findfriend.kr/&text=" + encodeURIComponent(sns_title + sns_br + sns_summary + sns_br);
                     window.open(url, 'blank');
                     break;
                 }
