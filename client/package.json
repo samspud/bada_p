@@ -12,7 +12,7 @@
     "react-app-polyfill": "^1.0.6",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
-    "react-native": "^0.63.0",
+    "react-native": "^0.64.1",
     "react-native-web": "^0.13.3",
     "react-router-dom": "^5.2.0",
     "react-router-native": "^5.2.0",
